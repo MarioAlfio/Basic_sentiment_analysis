@@ -17,7 +17,7 @@ vect = CountVectorizer(ngram_range=(1, 2))
 X = vect.fit_transform(X)
 
 # abbiamo aggiunto ngram in countvect per migliorare le accuratezze comunque ottime
-# ma ha migliorato solo train e non test, questo significa che inizia a impararsi a memoria le coppie di parole che
+# ma ha migliorato solo train e non test, questo significa che inizia a imparare a memoria le coppie di parole che
 # distinguono il sentiment (cioè memorizza quale coppia forma le positive e quali le negative
 # prendendo solo una parte di dati nel train, quindi performa meglio ma sbagliando) nel training set,
 # allora si prova a dare meno dati al train ma risultato uguale
